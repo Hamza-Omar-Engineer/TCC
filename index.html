@@ -1,374 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>معهد التميز | Dashboard Pro</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-
-    <style>
-      :root {
-        --primary: #6a0dad;
-        --bg: #050505;
-        --text: #ffffff;
-        --glass: rgba(255, 255, 255, 0.03);
-        --border: rgba(255, 255, 255, 0.1);
-        --shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
-      }
-
-      .blue-theme {
-        --primary: #007bff;
-      }
-      .light-mode {
-        --bg: #f0f2f5;
-        --text: #1a1a1a;
-        --glass: rgba(0, 0, 0, 0.05);
-        --border: rgba(0, 0, 0, 0.1);
-      }
-
-      body {
-        margin: 0;
-        padding: 0;
-        background: var(--bg);
-        color: var(--text);
-        font-family: "Segoe UI", Roboto, sans-serif;
-        overflow-x: hidden;
-        transition: background 0.5s ease;
-      }
-
-      .hidden {
-        display: none !important;
-      }
-
-      /* شاشات الانتقال */
-      .overlay {
-        position: fixed;
-        inset: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 3000;
-        background: var(--bg);
-        transition: 0.6s;
-      }
-
-      .glow-btn {
-        padding: 15px 45px;
-        font-size: 1.4rem;
-        background: transparent;
-        color: white;
-        border: 2px solid var(--primary);
-        border-radius: 50px;
-        cursor: pointer;
-        box-shadow: 0 0 20px var(--primary);
-        transition: 0.3s;
-      }
-      .glow-btn:hover {
-        background: var(--primary);
-        transform: scale(1.05);
-      }
-
-      /* تسجيل الدخول الزجاجي */
-      .login-box {
-        background: var(--glass);
-        backdrop-filter: blur(20px);
-        border: 1px solid var(--border);
-        border-radius: 30px;
-        padding: 50px;
-        width: 380px;
-        text-align: center;
-        box-shadow: var(--shadow);
-      }
-
-      .login-box input {
-        width: 100%;
-        padding: 15px;
-        margin: 12px 0;
-        border-radius: 12px;
-        border: 1px solid var(--border);
-        background: rgba(255, 255, 255, 0.05);
-        color: var(--text);
-        outline: none;
-        box-sizing: border-box;
-      }
-
-      /* القائمة الجانبية الذكية */
-      #sidebar {
-        position: fixed;
-        right: -300px;
-        top: 0;
-        width: 280px;
-        height: 100%;
-        background: var(--glass);
-        backdrop-filter: blur(25px);
-        border-left: 1px solid var(--border);
-        transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        z-index: 2000;
-        padding: 30px;
-      }
-
-      #sidebar.active {
-        right: 0;
-        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
-      }
-
-      #sidebar-toggle {
-        position: fixed;
-        right: 20px;
-        top: 20px;
-        width: 45px;
-        height: 45px;
-        background: var(--primary);
-        color: white;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        z-index: 2100;
-        transition: 0.3s;
-      }
-
-      /* المحتوى والشبكة */
-      .main-content {
-        padding: 80px 20px 100px;
-        transition: 0.5s;
-      }
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 25px;
-        max-width: 1200px;
-        margin: auto;
-      }
-
-      .card {
-        background: var(--glass);
-        border: 1px solid var(--border);
-        padding: 40px;
-        border-radius: 20px;
-        text-align: center;
-        cursor: pointer;
-        transition: 0.4s;
-        position: relative;
-      }
-      .card:hover {
-        transform: translateY(-10px);
-        border-color: var(--primary);
-        background: rgba(106, 13, 173, 0.05);
-      }
-
-      /* زر الرجوع المطور */
-      #back-btn {
-        background: none;
-        border: 1px solid var(--primary);
-        color: var(--text);
-        padding: 8px 25px;
-        border-radius: 20px;
-        cursor: pointer;
-        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        position: relative;
-        overflow: hidden;
-      }
-
-      #back-btn:hover {
-        background: var(--primary); /* تلوين كامل */
-        color: #fff;
-        transform: translateX(10px); /* حركة لليمين (اتجاه الرجوع في RTL) */
-        box-shadow: 0 0 20px var(--primary);
-      }
-
-      /* الشريط السفلي (Social Dock) */
-      .social-dock {
-        position: fixed;
-        bottom: 25px;
-        left: 50%;
-        transform: translateX(-50%);
-        background: var(--glass);
-        backdrop-filter: blur(20px);
-        border: 1px solid var(--border);
-        padding: 10px 35px;
-        border-radius: 50px;
-        z-index: 1000;
-        display: flex;
-        gap: 30px;
-      }
-
-      .social-dock a {
-        font-size: 1.8rem;
-        color: var(--text);
-        transition: 0.6s ease;
-      }
-
-      .social-dock a:hover {
-        color: var(--clr);
-        transform: translateY(-15px) rotate(360deg);
-      }
-
-      /* الأزرار داخل الإعدادات */
-      .sidebar-btn {
-        width: 100%;
-        padding: 12px;
-        margin: 10px 0;
-        border-radius: 10px;
-        border: 1px solid var(--border);
-        background: var(--primary);
-        color: white;
-        cursor: pointer;
-        transition: 0.3s;
-      }
-    </style>
-  </head>
-  <body class="dark-mode">
-    <div id="splash" class="overlay">
-      <button onclick="nextStep('splash', 'login')" class="glow-btn">
-        اضغط لنبدأ
-      </button>
-    </div>
-
-    <div id="login" class="overlay hidden">
-      <div class="login-box">
-        <h2 style="margin-bottom: 30px">بيانات المهندس</h2>
-        <input type="text" id="user-name" placeholder="الاسم الثلاثي" />
-        <input type="text" id="user-phone" placeholder="رقم الهاتف" />
-        <button
-          onclick="finishLogin()"
-          class="glow-btn"
-          style="width: 100%; margin-top: 20px"
-        >
-          دخول
-        </button>
-      </div>
-    </div>
-
-    <div id="dashboard" class="hidden">
-      <div id="sidebar-toggle" onclick="toggleSidebar()">
-        <i class="fas fa-chevron-left"></i>
-      </div>
-
-      <aside id="sidebar">
-        <h3
-          style="border-bottom: 1px solid var(--border); padding-bottom: 10px"
-        >
-          الإعدادات
-        </h3>
-        <p>لون الهوية:</p>
-        <div style="display: flex; gap: 10px">
-          <button class="sidebar-btn" onclick="setTheme('purple')">
-            بنفسجي
-          </button>
-          <button
-            class="sidebar-btn"
-            style="background: #007bff"
-            onclick="setTheme('blue')"
-          >
-            أزرق
-          </button>
-        </div>
-        <p>الوضع:</p>
-        <button class="sidebar-btn" id="mode-btn" onclick="toggleMode()">
-          الوضع النهاري
-        </button>
-      </aside>
-
-      <main class="main-content">
-        <header style="text-align: center; margin-bottom: 50px">
-          <h1 id="page-title" style="font-size: 2.5rem; font-weight: 300">
-            الرئيسية
-          </h1>
-          <button id="back-btn" class="hidden" onclick="goBack()">
-            <i class="fas fa-arrow-right"></i> رجوع
-          </button>
-        </header>
-        <div id="grid-container" class="grid"></div>
-      </main>
-
-      <footer class="social-dock">
-        <a href="#" style="--clr: #25d366"><i class="fab fa-whatsapp"></i></a>
-        <a href="#" style="--clr: #1877f2"><i class="fab fa-facebook"></i></a>
-        <a href="#" style="--clr: #e4405f"><i class="fab fa-instagram"></i></a>
-        <a href="#" style="--clr: #0088cc"><i class="fab fa-telegram"></i></a>
-      </footer>
-    </div>
-
-    <script>
-      const data = {
-        "السنة الأولى": ["برمجيات", "شبكات", "حواسيب"],
-        "السنة الثانية": ["برمجيات", "شبكات", "تحكم"],
-      };
-      let history = [];
-
-      function nextStep(current, next) {
-        document.getElementById(current).classList.add("hidden");
-        document.getElementById(next).classList.remove("hidden");
-      }
-      function finishLogin() {
-        const name = document.getElementById("user-name").value;
-        if (name) {
-          nextStep("login", "dashboard");
-          render(Object.keys(data), "الرئيسية المعهد");
-        } else alert("أدخل بياناتك يا هندسة!");
-      }
-
-      function render(items, title) {
-        const container = document.getElementById("grid-container");
-        document.getElementById("page-title").innerText = title;
-        container.innerHTML = "";
-
-        title === "الرئيسية المعهد"
-          ? document.getElementById("back-btn").classList.add("hidden")
-          : document.getElementById("back-btn").classList.remove("hidden");
-
-        items.forEach((item) => {
-          const card = document.createElement("div");
-          card.className = "card";
-          card.innerHTML = `<h3>${item}</h3>`;
-          card.onclick = () => {
-            history.push({ items, title });
-            if (data[item]) render(data[item], item);
-            else render(["محاضرات", "ملخصات", "امتحانات"], item);
-          };
-          container.appendChild(card);
-        });
-      }
-
-      function goBack() {
-        const last = history.pop();
-        if (last) render(last.items, last.title);
-      }
-
-      function toggleSidebar() {
-        const sb = document.getElementById("sidebar");
-        const icon = document.querySelector("#sidebar-toggle i");
-        sb.classList.toggle("active");
-        icon.classList.toggle("fa-chevron-left");
-        icon.classList.toggle("fa-chevron-right");
-      }
-
-      function setTheme(theme) {
-        document.body.className =
-          theme +
-          "-theme " +
-          (document.body.classList.contains("light-mode") ? "light-mode" : "");
-      }
-
-      function toggleMode() {
-        document.body.classList.toggle("light-mode");
-        const isLight = document.body.classList.contains("light-mode");
-        document.getElementById("mode-btn").innerText = isLight
-          ? "الوضع الليلي"
-          : "الوضع النهاري";
-      }
-    </script>
-  </body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
   <head>
@@ -636,6 +265,38 @@
         #sidebar {
           width: 100%; /* تأخذ كامل الشاشة عند الفتح */
           right: -100%;
+        }
+
+        @media (max-width: 768px) {
+          .social-dock {
+            width: 85% !important; /* تقليل العرض ليناسب الشاشة */
+            padding: 8px 15px !important;
+            gap: 15px !important; /* تقليل المسافة بين الأيقونات */
+          }
+
+          .social-dock a {
+            font-size: 1.3rem !important; /* تصغير الأيقونات قليلاً */
+          }
+        }
+        @media (max-width: 768px) {
+          #sidebar {
+            right: -110% !important; /* دفع القائمة بعيداً تماماً عن الشاشة */
+            width: 80% !important; /* عرض القائمة عند فتحها */
+          }
+
+          /* منع التمرير الأفقي الذي يظهر الأطراف */
+          body {
+            overflow-x: hidden !important;
+            position: relative;
+          }
+        }
+        @media (max-width: 768px) {
+          #sidebar-toggle {
+            right: 10px !important;
+            top: 15px !important;
+            width: 35px !important; /* تصغير حجم الدائرة */
+            height: 35px !important;
+          }
         }
       }
     </style>
