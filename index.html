@@ -104,7 +104,7 @@
 
       #sidebar {
         position: fixed;
-        right: -300px;
+        right: -340px; /* تم زيادة الإخفاء الكامل */
         top: 0;
         width: 280px;
         height: 100%;
@@ -114,6 +114,7 @@
         transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 2000;
         padding: 30px;
+        box-sizing: border-box; /* مهم جداً */
       }
 
       #sidebar.active {
@@ -193,11 +194,14 @@
         background: var(--glass);
         backdrop-filter: blur(20px);
         border: 1px solid var(--border);
-        padding: 10px 35px;
+        padding: 10px 20px;
         border-radius: 50px;
         z-index: 1000;
         display: flex;
-        gap: 30px;
+        gap: 20px;
+        flex-wrap: wrap; /* يسمح بالنزول لسطر ثاني */
+        justify-content: center;
+        max-width: 90%;
       }
 
       .social-dock a {
@@ -223,80 +227,27 @@
         transition: 0.3s;
       }
 
-      /* ضبط الموقع للهواتف */
       @media (max-width: 768px) {
-        /* 1. ضبط حجم الخطوط والعناوين */
-        #page-title {
-          font-size: 1.8rem !important;
-          margin-bottom: 30px;
-        }
-
-        /* 2. تحويل الشبكة (Grid) لعمود واحد */
-        .grid {
-          grid-template-columns: 1fr !important; /* كرت واحد في كل سطر */
-          gap: 15px;
-          padding: 10px;
-        }
-
-        /* 3. ضبط حجم الكروت لتناسب راحة اليد */
-        .card {
-          padding: 30px 20px;
-          margin: 0 10px;
-        }
-
-        /* 4. صندوق تسجيل الدخول */
         .login-box {
-          width: 85% !important; /* يأخذ أغلب عرض الشاشة */
+          width: 90%;
           padding: 30px 20px;
         }
 
-        /* 5. الشريط السفلي (Social Dock) */
-        .social-dock {
-          width: 90%;
-          padding: 10px 15px;
-          gap: 20px;
+        .grid {
+          grid-template-columns: 1fr;
         }
 
         .social-dock a {
           font-size: 1.5rem;
         }
 
-        /* 6. القائمة الجانبية (Sidebar) */
         #sidebar {
-          width: 100%; /* تأخذ كامل الشاشة عند الفتح */
-          right: -100%;
+          width: 260px;
+          right: -320px;
         }
 
-        @media (max-width: 768px) {
-          .social-dock {
-            width: 85% !important; /* تقليل العرض ليناسب الشاشة */
-            padding: 8px 15px !important;
-            gap: 15px !important; /* تقليل المسافة بين الأيقونات */
-          }
-
-          .social-dock a {
-            font-size: 1.3rem !important; /* تصغير الأيقونات قليلاً */
-          }
-        }
-        @media (max-width: 768px) {
-          #sidebar {
-            right: -110% !important; /* دفع القائمة بعيداً تماماً عن الشاشة */
-            width: 80% !important; /* عرض القائمة عند فتحها */
-          }
-
-          /* منع التمرير الأفقي الذي يظهر الأطراف */
-          body {
-            overflow-x: hidden !important;
-            position: relative;
-          }
-        }
-        @media (max-width: 768px) {
-          #sidebar-toggle {
-            right: 10px !important;
-            top: 15px !important;
-            width: 35px !important; /* تصغير حجم الدائرة */
-            height: 35px !important;
-          }
+        .main-content {
+          padding: 80px 15px 140px;
         }
       }
     </style>
