@@ -302,6 +302,7 @@
         <button class="sidebar-btn" id="mode-btn" onclick="toggleMode()">
           الوضع النهاري
         </button>
+        <button class="sidebar-btn" onclick="logout()">تسجيل الخروج</button>;
       </aside>
 
       <main class="main-content">
@@ -355,31 +356,34 @@
         document.getElementById(current).classList.add("hidden");
         document.getElementById(next).classList.remove("hidden");
       }
+
       function finishLogin() {
         const nameInput = document.getElementById("user-name").value.trim();
         const phoneInput = document.getElementById("user-phone").value.trim();
 
-        // 1. التحقق من الاسم الثلاثي (يجب أن يتكون من 3 كلمات حصراً)
+        // التحقق من الاسم الثلاثي
         const nameParts = nameInput.split(/\s+/);
         const isNameValid =
           nameParts.length === 3 &&
           nameParts.every((part) => /^[\u0600-\u06FFa-zA-Z]+$/.test(part));
 
-        // 2. التحقق من الرقم (يبدأ بـ +، أرقام فقط، لا يتجاوز 13 خانة)
+        // التحقق من الرقم
         const isPhoneValid =
           /^\+\d{1,12}$/.test(phoneInput) && phoneInput.length <= 13;
 
         if (!isNameValid) {
-          alert("يرجى إدخال الاسم الثلاثي حصراً (نص فقط وبدون أرقام)");
+          alert("يرجى إدخال الاسم الثلاثي حصراً");
           return;
         }
 
         if (!isPhoneValid) {
-          alert(
-            "يرجى إدخال رقم هاتف صحيح يبدأ برمز الدولة (+) ولا يتجاوز 13 خانة"
-          );
+          alert("يرجى إدخال رقم هاتف صحيح");
           return;
         }
+
+        // حفظ البيانات
+        localStorage.setItem("studentName", nameInput);
+        localStorage.setItem("studentPhone", phoneInput);
 
         nextStep("login", "dashboard");
         render(Object.keys(data), "الرئيسية المعهد");
@@ -433,6 +437,29 @@
         document.getElementById("mode-btn").innerText = isLight
           ? "الوضع الليلي"
           : "الوضع النهاري";
+      }
+
+      id = "x7d2ke";
+      window.onload = function () {
+        const savedName = localStorage.getItem("studentName");
+        const savedPhone = localStorage.getItem("studentPhone");
+
+        // إذا البيانات محفوظة يدخل تلقائياً
+        if (savedName && savedPhone) {
+          document.getElementById("splash").classList.add("hidden");
+          document.getElementById("login").classList.add("hidden");
+          document.getElementById("dashboard").classList.remove("hidden");
+
+          render(Object.keys(data), "الرئيسية المعهد");
+        }
+      };
+
+      id = "r5f8tq";
+      function logout() {
+        localStorage.removeItem("studentName");
+        localStorage.removeItem("studentPhone");
+
+        location.reload();
       }
     </script>
   </body>
