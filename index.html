@@ -593,6 +593,51 @@
         cursor: pointer;
         transition: 0.3s;
       }
+
+      /* ضبط الموقع للهواتف */
+      @media (max-width: 768px) {
+        /* 1. ضبط حجم الخطوط والعناوين */
+        #page-title {
+          font-size: 1.8rem !important;
+          margin-bottom: 30px;
+        }
+
+        /* 2. تحويل الشبكة (Grid) لعمود واحد */
+        .grid {
+          grid-template-columns: 1fr !important; /* كرت واحد في كل سطر */
+          gap: 15px;
+          padding: 10px;
+        }
+
+        /* 3. ضبط حجم الكروت لتناسب راحة اليد */
+        .card {
+          padding: 30px 20px;
+          margin: 0 10px;
+        }
+
+        /* 4. صندوق تسجيل الدخول */
+        .login-box {
+          width: 85% !important; /* يأخذ أغلب عرض الشاشة */
+          padding: 30px 20px;
+        }
+
+        /* 5. الشريط السفلي (Social Dock) */
+        .social-dock {
+          width: 90%;
+          padding: 10px 15px;
+          gap: 20px;
+        }
+
+        .social-dock a {
+          font-size: 1.5rem;
+        }
+
+        /* 6. القائمة الجانبية (Sidebar) */
+        #sidebar {
+          width: 100%; /* تأخذ كامل الشاشة عند الفتح */
+          right: -100%;
+        }
+      }
     </style>
   </head>
   <body class="dark-mode">
