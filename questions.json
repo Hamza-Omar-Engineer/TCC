@@ -1,0 +1,34 @@
+{
+  "تعاريف": [
+    {
+      "question": "ما هو ARP؟",
+      "answer": "بروتوكول لتحويل IP إلى MAC"
+    },
+
+    {
+      "question": "ما هو DHCP؟",
+      "answer": "بروتوكول يمنح IP تلقائياً"
+    }
+  ],
+
+  "تعداد": [
+    {
+      "question": "عدد مراحل DORA",
+      "answer": "Discover - Offer - Request - Acknowledge"
+    }
+  ],
+
+  "تعاليل": [
+    {
+      "question": "علل استخدام Zigbee",
+      "answer": "لأنه قليل استهلاك الطاقة"
+    }
+  ],
+
+  "أسئلة عامة": [
+    {
+      "question": "ما الفرق بين LAN و WAN؟",
+      "answer": "LAN محلية و WAN واسعة"
+    }
+  ]
+}
