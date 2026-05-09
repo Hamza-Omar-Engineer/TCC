@@ -262,7 +262,7 @@
       <div class="login-box">
         <h2>قم بإدخال بياناتك..</h2>
 
-        <input type="text" id="user-name" placeholder="الاسم الثلاثي" />
+        <input type="text" id="user-name" placeholder="الاسم " />
 
         <input type="text" id="user-phone" placeholder="رقم الهاتف (اختياري)" />
 
@@ -690,8 +690,8 @@ LOAD QUESTIONS JSON
 
         const parts = nameInput.split(/\s+/);
 
-        if (parts.length !== 3) {
-          alert("يرجى إدخال اسم ثلاثي");
+        if (parts.length !== 1) {
+          alert("يرجى إدخال اسمك");
           return;
         }
 
