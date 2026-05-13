@@ -33,12 +33,32 @@
 
       body {
         margin: 0;
+
         padding: 0;
-        background: var(--bg);
+
         color: var(--text);
+
         font-family: "Segoe UI", Roboto, sans-serif;
+
         overflow-x: hidden;
-        transition: background 0.5s ease;
+
+        transition: 0.4s;
+
+        /* =========================
+           ضع مسار الصورة هنا
+        ========================= */
+
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+          url("image/hamza.png");
+
+        background-size: cover;
+
+        background-position: center;
+
+        background-repeat: no-repeat;
+
+        background-attachment: fixed;
       }
 
       .hidden {
@@ -433,6 +453,12 @@
               "دراسة المادة": {
                 type: "categories",
                 file: "questions.json",
+              },
+            },
+            "تقانات الإنترنت": {
+              "دراسة المادة": {
+                type: "categories",
+                file: "question.json",
               },
             },
           },
