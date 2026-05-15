@@ -1,0 +1,410 @@
+{
+    "البطاقات التعليمية":
+    [
+  {
+    "question": "ربط الجافا سكريبت أسفل الـ body",
+    "answer": "وضع ملف JavaScript قبل </body> لضمان تحميل عناصر الصفحة قبل تنفيذ الكود."
+  },
+  {
+    "question": "defer",
+    "answer": "خاصية تؤجل تنفيذ ملف JavaScript حتى يكتمل تحميل HTML."
+  },
+  {
+    "question": "Internal Script",
+    "answer": "كتابة كود JavaScript مباشرة داخل وسم <script> في صفحة HTML."
+  },
+  {
+    "question": "let",
+    "answer": "تعريف متغير يمكن تغيير قيمته لاحقاً."
+  },
+  {
+    "question": "const",
+    "answer": "تعريف ثابت لا يمكن تغيير قيمته بعد إنشائه."
+  },
+  {
+    "question": "String",
+    "answer": "نوع بيانات لتخزين النصوص بين علامات تنصيص."
+  },
+  {
+    "question": "Number",
+    "answer": "نوع بيانات لتخزين الأرقام الصحيحة والعشرية."
+  },
+  {
+    "question": "Boolean",
+    "answer": "نوع بيانات منطقي يحمل true أو false."
+  },
+  {
+    "question": "Undefined",
+    "answer": "قيمة لمتغير تم تعريفه بدون إعطاء قيمة."
+  },
+  {
+    "question": "Null",
+    "answer": "قيمة فارغة يحددها المبرمج عمداً."
+  },
+  
+  {
+    "question": "undefined",
+    "answer": "قيمة تظهر عند عدم وجود بيانات أو عدم تعيين قيمة لمتغير."
+  },
+  {
+    "question": "Reference Types",
+    "answer": "أنواع بيانات تُخزن كمراجع في الذاكرة مثل Objects و Arrays و Functions."
+  },
+  {
+    "question": "Type Conversion",
+    "answer": "تحويل نوع البيانات من نوع لآخر بشكل صريح أو ضمني."
+  },
+  {
+    "question": "Arithmetic Operators",
+    "answer": "معاملات لإجراء العمليات الحسابية مثل الجمع وباقي القسمة والأس."
+  },
+  {
+    "question": "Modulo (%)",
+    "answer": "يعيد باقي القسمة بين رقمين."
+  },
+  {
+    "question": "Exponentiation (**)",
+    "answer": "يستخدم لرفع رقم إلى قوة معينة."
+  },
+  {
+    "question": "Assignment Operators",
+    "answer": "اختصارات لتعديل قيمة المتغير مباشرة مثل += و -=."
+  },
+  {
+    "question": "+=",
+    "answer": "يجمع قيمة جديدة مع المتغير ثم يخزن النتيجة."
+  },
+  {
+    "question": "-=",
+    "answer": "يطرح قيمة من المتغير ثم يخزن النتيجة."
+  },
+  {
+    "question": "*=",
+    "answer": "يضرب قيمة المتغير ثم يخزن النتيجة."
+  },
+  {
+    "question": "/=",
+    "answer": "يقسم قيمة المتغير ثم يخزن النتيجة."
+  },
+  
+  {
+    "question": "==",
+    "answer": "يقارن القيم مع تجاهل نوع البيانات."
+  },
+  {
+    "question": "===",
+    "answer": "يقارن القيم ونوع البيانات معاً."
+  },
+  {
+    "question": "!=",
+    "answer": "يتحقق إذا كانت القيم غير متساوية."
+  },
+  {
+    "question": "!==",
+    "answer": "يتحقق إذا كانت القيم أو الأنواع مختلفة."
+  },
+  {
+    "question": "<",
+    "answer": "يتحقق إذا كانت القيمة أصغر من قيمة أخرى."
+  },
+  {
+    "question": ">",
+    "answer": "يتحقق إذا كانت القيمة أكبر من قيمة أخرى."
+  },
+  {
+    "question": "<=",
+    "answer": "يتحقق إذا كانت القيمة أصغر من أو تساوي قيمة أخرى."
+  },
+  {
+    "question": ">=",
+    "answer": "يتحقق إذا كانت القيمة أكبر من أو تساوي قيمة أخرى."
+  },
+  {
+    "question": "&&",
+    "answer": "يعيد true إذا كانت كل الشروط صحيحة."
+  },
+  {
+    "question": "||",
+    "answer": "يعيد true إذا تحقق شرط واحد على الأقل."
+  },
+  {
+    "question": "!",
+    "answer": "يعكس القيمة المنطقية true أو false."
+  },
+  {
+    "question": "if...else",
+    "answer": "ينفذ كود حسب تحقق الشرط أو عدمه."
+  },
+  {
+    "question": "switch",
+    "answer": "يختار تنفيذ كود بناءً على عدة حالات."
+  },
+  {
+    "question": "break",
+    "answer": "يوقف تنفيذ حالات switch."
+  },
+  {
+    "question": "default",
+    "answer": "ينفذ كود افتراضي إذا لم تتحقق أي حالة."
+  },
+  {
+    "question": "Ternary Operator",
+    "answer": "اختصار لجملة if...else بسطر واحد."
+  },
+  {
+    "question": "alert()",
+    "answer": "يعرض نافذة تنبيه للمستخدم."
+  },
+  {
+    "question": "console.log()",
+    "answer": "يطبع البيانات داخل لوحة التحكم Console."
+  },
+  
+  {
+    "question": "++",
+    "answer": "يزيد قيمة المتغير بمقدار 1."
+  },
+  {
+    "question": "--",
+    "answer": "ينقص قيمة المتغير بمقدار 1."
+  },
+  {
+    "question": "typeof",
+    "answer": "يعرض نوع البيانات الخاصة بالقيمة."
+  },
+  {
+    "question": "for",
+    "answer": "ينشئ حلقة تكرار بعدد مرات محدد."
+  },
+  {
+    "question": "while",
+    "answer": "يكرر الكود طالما الشرط صحيح."
+  },
+  {
+    "question": "do...while",
+    "answer": "ينفذ الكود مرة واحدة على الأقل ثم يكرر طالما الشرط صحيح."
+  },
+  {
+    "question": "for...in",
+    "answer": "يمر على مفاتيح وخصائص الكائن Object."
+  },
+  {
+    "question": "for...of",
+    "answer": "يمر على قيم المصفوفات والعناصر القابلة للتكرار."
+  },
+  {
+    "question": "function",
+    "answer": "ينشئ دالة لتنفيذ مهمة محددة قابلة لإعادة الاستخدام."
+  },
+  {
+    "question": "Function Declaration",
+    "answer": "تعريف تقليدي للدالة يدعم Hoisting."
+  },
+  {
+    "question": "Function Expression",
+    "answer": "يخزن الدالة داخل متغير ولا يدعم Hoisting."
+  },
+  
+  {
+    "question": "Arrow Function",
+    "answer": "ينشئ دالة مختصرة تستخدم this من النطاق الخارجي."
+  },
+  {
+    "question": "IIFE",
+    "answer": "ينشئ دالة تُنفذ فوراً لعزل المتغيرات داخل نطاق خاص."
+  },
+  {
+    "question": "Higher-Order Function",
+    "answer": "دالة تستقبل دالة أخرى أو تعيد دالة كقيمة."
+  },
+  {
+    "question": "Array",
+    "answer": "يخزن مجموعة عناصر مرتبة داخل مصفوفة قابلة للتعديل."
+  },
+  {
+    "question": "Mutating Methods",
+    "answer": "تعدل المصفوفة الأصلية مباشرة في الذاكرة."
+  },
+  {
+    "question": "push()",
+    "answer": "يضيف عناصر إلى نهاية المصفوفة ويرجع طولها الجديد."
+  },
+  {
+    "question": "pop()",
+    "answer": "يحذف آخر عنصر من المصفوفة ويرجعه."
+  },
+  {
+    "question": "unshift()",
+    "answer": "يضيف عناصر إلى بداية المصفوفة ويرجع طولها الجديد."
+  },
+  {
+    "question": "shift()",
+    "answer": "يحذف أول عنصر من المصفوفة ويرجعه."
+  },
+  {
+    "question": "splice()",
+    "answer": "يضيف أو يحذف أو يستبدل عناصر داخل المصفوفة."
+  },
+  {
+    "question": "reverse()",
+    "answer": "يعكس ترتيب عناصر المصفوفة."
+  },
+  {
+    "question": "sort()",
+    "answer": "يرتب عناصر المصفوفة افتراضياً ترتيباً نصياً."
+  },
+  {
+    "question": "fill()",
+    "answer": "يملأ عناصر المصفوفة بقيمة محددة."
+  },
+  
+  {
+    "question": "forEach()",
+    "answer": "يمر على عناصر المصفوفة لتنفيذ أمر دون إنشاء مصفوفة جديدة."
+  },
+  {
+    "question": "map()",
+    "answer": "ينشئ مصفوفة جديدة بعد تعديل كل عنصر."
+  },
+  {
+    "question": "filter()",
+    "answer": "ينشئ مصفوفة جديدة بالعناصر التي تحقق الشرط."
+  },
+  {
+    "question": "find()",
+    "answer": "يعيد أول عنصر يحقق الشرط."
+  },
+  {
+    "question": "reduce()",
+    "answer": "يختزل عناصر المصفوفة إلى قيمة واحدة."
+  },
+  {
+    "question": "flat()",
+    "answer": "يفك المصفوفات المتداخلة إلى مصفوفة مسطحة."
+  },
+  {
+    "question": "concat()",
+    "answer": "يدمج مصفوفتين أو أكثر في مصفوفة جديدة."
+  },
+  {
+    "question": "slice()",
+    "answer": "يقتطع جزءاً من المصفوفة دون تعديل الأصل."
+  },
+  {
+    "question": "join()",
+    "answer": "يحوّل عناصر المصفوفة إلى نص واحد بفاصل محدد."
+  },
+  {
+    "question": "toString()",
+    "answer": "يحوّل المصفوفة إلى نص مفصول بفواصل."
+  },
+  {
+    "question": "includes()",
+    "answer": "يفحص إذا كان العنصر موجوداً في المصفوفة."
+  },
+  {
+    "question": "indexOf()",
+    "answer": "يعيد موقع أول ظهور للعنصر في المصفوفة."
+  },
+  {
+    "question": "lastIndexOf()",
+    "answer": "يعيد موقع آخر ظهور للعنصر في المصفوفة."
+  },
+  {
+    "question": "every()",
+    "answer": "يفحص إذا كانت جميع العناصر تحقق الشرط."
+  },
+  {
+    "question": "some()",
+    "answer": "يفحص إذا كان عنصر واحد على الأقل يحقق الشرط."
+  },
+  
+  {
+    "question": "Object",
+    "answer": "يخزن البيانات على شكل مفاتيح وقيم."
+  },
+  {
+    "question": "toUpperCase()",
+    "answer": "يحوّل النص إلى أحرف كبيرة."
+  },
+  {
+    "question": "toLowerCase()",
+    "answer": "يحوّل النص إلى أحرف صغيرة."
+  },
+  {
+    "question": "includes()",
+    "answer": "يفحص إذا كان النص يحتوي على قيمة معينة."
+  },
+  {
+    "question": "startsWith()",
+    "answer": "يفحص إذا كان النص يبدأ بقيمة معينة."
+  },
+  {
+    "question": "endsWith()",
+    "answer": "يفحص إذا كان النص ينتهي بقيمة معينة."
+  },
+  {
+    "question": "trim()",
+    "answer": "يحذف الفراغات من بداية ونهاية النص."
+  },
+  {
+    "question": "replace()",
+    "answer": "يستبدل جزءاً من النص بقيمة جديدة."
+  },
+  {
+    "question": "repeat()",
+    "answer": "يكرر النص عدداً محدداً من المرات."
+  },
+  {
+    "question": "slice()",
+    "answer": "يقتطع جزءاً من النص."
+  },
+  {
+    "question": "split()",
+    "answer": "يقسم النص إلى مصفوفة."
+  },
+  {
+    "question": "indexOf()",
+    "answer": "يعيد موقع أول ظهور للكلمة في النص."
+  },
+  
+  {
+    "question": "querySelector()",
+    "answer": "يحدد أول عنصر يطابق محدد CSS."
+  },
+  {
+    "question": "querySelectorAll()",
+    "answer": "يحدد جميع العناصر المطابقة لمحدد CSS."
+  },
+  {
+    "question": "getElementById()",
+    "answer": "يجلب عنصراً باستخدام الـ ID."
+  },
+  {
+    "question": "getElementsByClassName()",
+    "answer": "يجلب العناصر التي تحمل كلاس معين."
+  },
+  {
+    "question": "style",
+    "answer": "يعدل تنسيقات CSS مباشرة على العنصر."
+  },
+  {
+    "question": "Array.from()",
+    "answer": "يحول القيم الشبيهة بالمصفوفات إلى مصفوفة حقيقية."
+  },
+  {
+    "question": "setAttribute()",
+    "answer": "يضيف أو يعدل سمة في العنصر."
+  },
+  {
+    "question": "Custom Data Attributes",
+    "answer": "تخزن بيانات مخصصة داخل عناصر HTML."
+  },
+  {
+    "question": "dataset",
+    "answer": "يقرأ بيانات data-attributes من العنصر."
+  }
+
+
+]
+}

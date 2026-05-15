@@ -1,412 +1,632 @@
 {
-    "البطاقات التعليمية":[
-  {
-    "question": "style",
-    "answer": "تطبيق تنسيق سطري مباشر داخل وسم HTML."
-  },
-  {
-    "question": "<style>",
-    "answer": "كتابة تنسيقات CSS داخلية داخل وسم head."
-  },
-  {
-    "question": "<link>",
-    "answer": "ربط ملف CSS خارجي بصفحة HTML."
-  },
-  {
-    "question": "rel",
-    "answer": "تحديد نوع العلاقة بين الصفحة والملف المرتبط."
-  },
-  {
-    "question": "href",
-    "answer": "تحديد مسار الملف المرتبط."
-  },
-  {
-    "question": "Class Selector",
-    "answer": "تحديد مجموعة عناصر تشترك بنفس التنسيق."
-  },
-  {
-    "question": ".",
-    "answer": "رمز تعريف الكلاس في CSS."
-  },
-  {
-    "question": "ID Selector",
-    "answer": "تحديد عنصر فريد داخل الصفحة."
-  },
-  {
-    "question": "#",
-    "answer": "رمز تعريف الـ ID في CSS."
-  },
-  {
-    "question": "camelCase",
-    "answer": "نمط تسمية يبدأ بحرف صغير والكلمات التالية بحرف كبير."
-  },
-  {
-    "question": "PascalCase",
-    "answer": "نمط تسمية تبدأ فيه جميع الكلمات بحرف كبير."
-  },
-  {
-    "question": "kebab-case",
-    "answer": "نمط تسمية تفصل فيه الكلمات بشرطة عادية."
-  },
-  {
-    "question": "snake_case",
-    "answer": "نمط تسمية تفصل فيه الكلمات بشرطة سفلية."
-  },
-  {
-    "question": "UPPER_SNAKE_CASE",
-    "answer": "نمط تسمية بحروف كبيرة مع شرطة سفلية بين الكلمات."
-  },
-  {
-    "question": "color",
-    "answer": "تحديد لون النص."
-  },
-  {
-    "question": "Hex",
-    "answer": "نظام ألوان سداسي عشري يبدأ بـ #."
-  },
-  {
-    "question": "RGB",
-    "answer": "نظام ألوان يعتمد الأحمر والأخضر والأزرق."
-  },
-  {
-    "question": "RGBA",
-    "answer": "نظام RGB مع إضافة الشفافية."
-  },
-  {
-    "question": "HSL",
-    "answer": "نظام ألوان يعتمد الصبغة والتشبع والإضاءة."
-  },
-  {
-    "question": "HSLA",
-    "answer": "نظام HSL مع إضافة الشفافية."
-  },
-  {
-    "question": "Hue",
-    "answer": "درجة اللون على دائرة الألوان."
-  },
-  {
-    "question": "Saturation",
-    "answer": "درجة نقاء اللون أو تشبعه."
-  },
-  {
-    "question": "Lightness",
-    "answer": "درجة إضاءة اللون."
-  },
-  {
-    "question": "Alpha",
-    "answer": "قيمة تحدد شفافية اللون."
-  },
-  {
-    "question": "width",
-    "answer": "تحديد عرض العنصر."
-  },
-  {
-    "question": "height",
-    "answer": "تحديد ارتفاع العنصر."
-  },
-  {
-    "question": "background-color",
-    "answer": "تحديد لون خلفية العنصر."
-  },
-  {
-    "question": "padding",
-    "answer": "إنشاء مسافة داخلية بين المحتوى والإطار."
-  },
-  {
-    "question": "margin",
-    "answer": "إنشاء مسافة خارجية حول العنصر."
-  },
-  {
-    "question": "px",
-    "answer": "وحدة قياس ثابتة بالبكسل."
-  },
-  {
-    "question": "Caching",
-    "answer": "تخزين ملفات CSS مؤقتاً لتسريع تحميل الصفحات."
-  },
-  {
-    "question": "Modular Design",
-    "answer": "تقسيم ملفات التنسيق لعدة ملفات منظمة."
-  },
-  {
-    "question": "Specificity",
-    "answer": "درجة أولوية وقوة تطبيق التنسيق."
-  },
-  {
-    "question": "Box Model",
-    "answer": "نموذج يشرح مكونات العنصر من محتوى وحدود وهوامش."
-  },
-   {
-    "question": "display: block",
-    "answer": "يجعل العنصر كتلياً ويحجز سطراً كاملاً."
-  },
-  {
-    "question": "display: inline",
-    "answer": "يجعل العنصر مضمناً ويأخذ مساحة محتواه فقط."
-  },
-  {
-    "question": "display: inline-block",
-    "answer": "يجمع بين البقاء بنفس السطر وإمكانية تحديد الطول والعرض."
-  },
-  {
-    "question": "Grouping Selectors",
-    "answer": "تجميع عدة محددات بفاصلة لتطبيق نفس التنسيق عليها."
-  },
-  {
-    "question": "list-style-type",
-    "answer": "تغيير شكل أو إزالة علامات القوائم."
-  },
-  {
-    "question": "disc",
-    "answer": "النقطة الدائرية السوداء الافتراضية للقوائم."
-  },
-  {
-    "question": "circle",
-    "answer": "دائرة مفرغة لعلامات القائمة."
-  },
-  {
-    "question": "square",
-    "answer": "مربع صغير كعلامة للقائمة."
-  },
-  {
-    "question": "none",
-    "answer": "إزالة علامات القائمة أو الزخرفة بالكامل."
-  },
-  {
-    "question": "decimal",
-    "answer": "ترقيم عادي بالأرقام."
-  },
-  {
-    "question": "decimal-leading-zero",
-    "answer": "ترقيم يبدأ بصفر مثل 01 و02."
-  },
-  {
-    "question": "lower-roman",
-    "answer": "ترقيم روماني صغير."
-  },
-  {
-    "question": "upper-roman",
-    "answer": "ترقيم روماني كبير."
-  },
-  {
-    "question": "lower-alpha",
-    "answer": "ترقيم بحروف إنجليزية صغيرة."
-  },
-  {
-    "question": "upper-alpha",
-    "answer": "ترقيم بحروف إنجليزية كبيرة."
-  },
-  {
-    "question": "text-align",
-    "answer": "تحديد محاذاة النص أفقياً."
-  },
-  {
-    "question": "text-indent",
-    "answer": "إزاحة السطر الأول من الفقرة."
-  },
-  {
-    "question": "letter-spacing",
-    "answer": "تحديد المسافة بين الحروف."
-  },
-  {
-    "question": "word-spacing",
-    "answer": "تحديد المسافة بين الكلمات."
-  },
-  {
-    "question": "font-family",
-    "answer": "تحديد نوع الخط مع إمكانية وضع خطوط احتياطية."
-  },
-  {
-    "question": "font-size",
-    "answer": "تحديد حجم الخط."
-  },
-  {
-    "question": "font-weight",
-    "answer": "تحديد سماكة الخط."
-  },
-  {
-    "question": "font-style",
-    "answer": "تحديد ميلان الخط."
-  },
-  {
-    "question": "font-variant",
-    "answer": "تطبيق تأثيرات خاصة مثل small-caps."
-  },
-  {
-    "question": "small-caps",
-    "answer": "تحويل الحروف الصغيرة لكبيرة بحجم صغير."
-  },
-  {
-    "question": "text-decoration",
-    "answer": "إضافة أو إزالة خطوط زخرفية للنص."
-  },
-  {
-    "question": "underline",
-    "answer": "إضافة خط تحت النص."
-  },
-  {
-    "question": "line-through",
-    "answer": "إضافة خط شطب بمنتصف النص."
-  },
-  {
-    "question": "text-transform",
-    "answer": "تغيير حالة الأحرف برمجياً."
-  },
-  {
-    "question": "uppercase",
-    "answer": "تحويل الأحرف إلى كبيرة."
-  },
-  {
-    "question": "lowercase",
-    "answer": "تحويل الأحرف إلى صغيرة."
-  },
-  {
-    "question": "capitalize",
-    "answer": "تكبير أول حرف من كل كلمة."
-  },
-  {
-    "question": "text-shadow",
-    "answer": "إضافة ظل للنص."
-  },
-  {
-    "question": "font shorthand",
-    "answer": "اختصار خصائص الخط بسطر واحد."
-  },
-  {
-    "question": "background-color",
-    "answer": "تحديد لون خلفية العنصر."
-  },
-  {
-    "question": "padding",
-    "answer": "إنشاء مسافة داخلية بين المحتوى وحدود الصندوق."
-  },
-  {
-    "question": "line-height",
-    "answer": "تحديد المسافة العمودية بين الأسطر."
-  },
-  {
-    "question": "opacity",
-    "answer": "تحديد درجة شفافية العنصر بالكامل."
-  },
-  {
-    "question": "RGBA",
-    "answer": "نظام ألوان يدعم الشفافية للخلفية فقط."
-  },
-  {
-    "question": "HSLA",
-    "answer": "نظام ألوان يدعم الشفافية باستخدام HSL."
-  },
-  {
-    "question": "em",
-    "answer": "وحدة نسبية تعتمد على حجم خط العنصر الأب."
-  },
-  {
-    "question": "rem",
-    "answer": "وحدة نسبية تعتمد على حجم خط العنصر الجذري html."
-  },
-  {
-    "question": "vw",
-    "answer": "وحدة تمثل 1% من عرض نافذة المتصفح."
-  },
-  {
-    "question": "vh",
-    "answer": "وحدة تمثل 1% من ارتفاع نافذة المتصفح."
-  },
-  {
-    "question": "position: static",
-    "answer": "التموضع الافتراضي للعناصر دون استجابة للإزاحات."
-  },
-  {
-    "question": "position: relative",
-    "answer": "إزاحة العنصر نسبةً لمكانه الأصلي مع بقاء فراغه."
-  },
-  {
-    "question": "position: absolute",
-    "answer": "إزالة العنصر من تدفق الصفحة وتموضعه نسبةً لأقرب أب متموضع."
-  },
-  {
-    "question": "position: fixed",
-    "answer": "تثبيت العنصر بالنسبة لنافذة المتصفح أثناء التمرير."
-  },
-  {
-    "question": "display: flex",
-    "answer": "تحويل العنصر إلى حاوية Flexbox مرنة."
-  },
-  {
-    "question": "flex-direction",
-    "answer": "تحديد اتجاه المحور الرئيسي لعناصر الفليكس."
-  },
-  {
-    "question": "row",
-    "answer": "ترتيب العناصر أفقياً وهو الاتجاه الافتراضي."
-  },
-  {
-    "question": "column",
-    "answer": "ترتيب العناصر عمودياً."
-  },
-  {
-    "question": "row-reverse",
-    "answer": "ترتيب العناصر أفقياً بعكس الاتجاه."
-  },
-  {
-    "question": "column-reverse",
-    "answer": "ترتيب العناصر عمودياً بعكس الاتجاه."
-  },
-  {
-    "question": "justify-content",
-    "answer": "توزيع العناصر على المحور الرئيسي."
-  },
-  {
-    "question": "align-items",
-    "answer": "محاذاة العناصر على المحور العرضي."
-  },
-  {
-    "question": "flex-start",
-    "answer": "محاذاة العناصر عند بداية المحور."
-  },
-  {
-    "question": "flex-end",
-    "answer": "محاذاة العناصر عند نهاية المحور."
-  },
-  {
-    "question": "center",
-    "answer": "توسيط العناصر داخل الحاوية."
-  },
-  {
-    "question": "space-between",
-    "answer": "توزيع العناصر مع مسافات بينية فقط."
-  },
-  {
-    "question": "space-evenly",
-    "answer": "توزيع المسافات بالتساوي قبل وبعد وبين العناصر."
-  },
-  {
-    "question": "stretch",
-    "answer": "تمديد العناصر لملء ارتفاع الحاوية."
-  },
-  {
-    "question": "order",
-    "answer": "تغيير الترتيب البصري للعناصر داخل Flexbox."
-  },
-  {
-    "question": "Document Flow",
-    "answer": "الترتيب الطبيعي للعناصر داخل الصفحة."
-  },
-  {
-    "question": "Viewport",
-    "answer": "المساحة المرئية الحالية من نافذة المتصفح."
-  },
-  {
-    "question": "Fallback Fonts",
-    "answer": "خطوط احتياطية تُستخدم إذا لم يتوفر الخط الأساسي."
-  },
-  {
-    "question": "Box Model",
-    "answer": "نظام يحدد المحتوى والحواف والهوامش والمسافات الداخلية."
-  },
-  {
-    "question": "kebab-case",
-    "answer": "نمط تسمية تفصل فيه الكلمات بشرطة عادية."
-  }
-]
+  "البطاقات التعليمية": [
+    {
+      "question": "style",
+      "answer": "تطبيق تنسيق سطري مباشر داخل وسم HTML."
+    },
+    {
+      "question": "<style>",
+      "answer": "كتابة تنسيقات CSS داخلية داخل وسم head."
+    },
+    {
+      "question": "<link>",
+      "answer": "ربط ملف CSS خارجي بصفحة HTML."
+    },
+    {
+      "question": "rel",
+      "answer": "تحديد نوع العلاقة بين الصفحة والملف المرتبط."
+    },
+    {
+      "question": "href",
+      "answer": "تحديد مسار الملف المرتبط."
+    },
+    {
+      "question": "Class Selector",
+      "answer": "تحديد مجموعة عناصر تشترك بنفس التنسيق."
+    },
+    {
+      "question": ".",
+      "answer": "رمز تعريف الكلاس في CSS."
+    },
+    {
+      "question": "ID Selector",
+      "answer": "تحديد عنصر فريد داخل الصفحة."
+    },
+    {
+      "question": "#",
+      "answer": "رمز تعريف الـ ID في CSS."
+    },
+    {
+      "question": "camelCase",
+      "answer": "نمط تسمية يبدأ بحرف صغير والكلمات التالية بحرف كبير."
+    },
+    {
+      "question": "PascalCase",
+      "answer": "نمط تسمية تبدأ فيه جميع الكلمات بحرف كبير."
+    },
+    {
+      "question": "kebab-case",
+      "answer": "نمط تسمية تفصل فيه الكلمات بشرطة عادية."
+    },
+    {
+      "question": "snake_case",
+      "answer": "نمط تسمية تفصل فيه الكلمات بشرطة سفلية."
+    },
+    {
+      "question": "UPPER_SNAKE_CASE",
+      "answer": "نمط تسمية بحروف كبيرة مع شرطة سفلية بين الكلمات."
+    },
+    {
+      "question": "color",
+      "answer": "تحديد لون النص."
+    },
+    {
+      "question": "Hex",
+      "answer": "نظام ألوان سداسي عشري يبدأ بـ #."
+    },
+    {
+      "question": "RGB",
+      "answer": "نظام ألوان يعتمد الأحمر والأخضر والأزرق."
+    },
+    {
+      "question": "RGBA",
+      "answer": "نظام RGB مع إضافة الشفافية."
+    },
+    {
+      "question": "HSL",
+      "answer": "نظام ألوان يعتمد الصبغة والتشبع والإضاءة."
+    },
+    {
+      "question": "HSLA",
+      "answer": "نظام HSL مع إضافة الشفافية."
+    },
+    {
+      "question": "Hue",
+      "answer": "درجة اللون على دائرة الألوان."
+    },
+    {
+      "question": "Saturation",
+      "answer": "درجة نقاء اللون أو تشبعه."
+    },
+    {
+      "question": "Lightness",
+      "answer": "درجة إضاءة اللون."
+    },
+    {
+      "question": "Alpha",
+      "answer": "قيمة تحدد شفافية اللون."
+    },
+    {
+      "question": "width",
+      "answer": "تحديد عرض العنصر."
+    },
+    {
+      "question": "height",
+      "answer": "تحديد ارتفاع العنصر."
+    },
+    {
+      "question": "background-color",
+      "answer": "تحديد لون خلفية العنصر."
+    },
+    {
+      "question": "padding",
+      "answer": "إنشاء مسافة داخلية بين المحتوى والإطار."
+    },
+    {
+      "question": "margin",
+      "answer": "إنشاء مسافة خارجية حول العنصر."
+    },
+    {
+      "question": "px",
+      "answer": "وحدة قياس ثابتة بالبكسل."
+    },
+    {
+      "question": "Caching",
+      "answer": "تخزين ملفات CSS مؤقتاً لتسريع تحميل الصفحات."
+    },
+    {
+      "question": "Modular Design",
+      "answer": "تقسيم ملفات التنسيق لعدة ملفات منظمة."
+    },
+    {
+      "question": "Specificity",
+      "answer": "درجة أولوية وقوة تطبيق التنسيق."
+    },
+    {
+      "question": "Box Model",
+      "answer": "نموذج يشرح مكونات العنصر من محتوى وحدود وهوامش."
+    },
+    {
+      "question": "display: block",
+      "answer": "يجعل العنصر كتلياً ويحجز سطراً كاملاً."
+    },
+    {
+      "question": "display: inline",
+      "answer": "يجعل العنصر مضمناً ويأخذ مساحة محتواه فقط."
+    },
+    {
+      "question": "display: inline-block",
+      "answer": "يجمع بين البقاء بنفس السطر وإمكانية تحديد الطول والعرض."
+    },
+    {
+      "question": "Grouping Selectors",
+      "answer": "تجميع عدة محددات بفاصلة لتطبيق نفس التنسيق عليها."
+    },
+    {
+      "question": "list-style-type",
+      "answer": "تغيير شكل أو إزالة علامات القوائم."
+    },
+    {
+      "question": "disc",
+      "answer": "النقطة الدائرية السوداء الافتراضية للقوائم."
+    },
+    {
+      "question": "circle",
+      "answer": "دائرة مفرغة لعلامات القائمة."
+    },
+    {
+      "question": "square",
+      "answer": "مربع صغير كعلامة للقائمة."
+    },
+    {
+      "question": "none",
+      "answer": "إزالة علامات القائمة أو الزخرفة بالكامل."
+    },
+    {
+      "question": "decimal",
+      "answer": "ترقيم عادي بالأرقام."
+    },
+    {
+      "question": "decimal-leading-zero",
+      "answer": "ترقيم يبدأ بصفر مثل 01 و02."
+    },
+    {
+      "question": "lower-roman",
+      "answer": "ترقيم روماني صغير."
+    },
+    {
+      "question": "upper-roman",
+      "answer": "ترقيم روماني كبير."
+    },
+    {
+      "question": "lower-alpha",
+      "answer": "ترقيم بحروف إنجليزية صغيرة."
+    },
+    {
+      "question": "upper-alpha",
+      "answer": "ترقيم بحروف إنجليزية كبيرة."
+    },
+    {
+      "question": "text-align",
+      "answer": "تحديد محاذاة النص أفقياً."
+    },
+    {
+      "question": "text-indent",
+      "answer": "إزاحة السطر الأول من الفقرة."
+    },
+    {
+      "question": "letter-spacing",
+      "answer": "تحديد المسافة بين الحروف."
+    },
+    {
+      "question": "word-spacing",
+      "answer": "تحديد المسافة بين الكلمات."
+    },
+    {
+      "question": "font-family",
+      "answer": "تحديد نوع الخط مع إمكانية وضع خطوط احتياطية."
+    },
+    {
+      "question": "font-size",
+      "answer": "تحديد حجم الخط."
+    },
+    {
+      "question": "font-weight",
+      "answer": "تحديد سماكة الخط."
+    },
+    {
+      "question": "font-style",
+      "answer": "تحديد ميلان الخط."
+    },
+    {
+      "question": "font-variant",
+      "answer": "تطبيق تأثيرات خاصة مثل small-caps."
+    },
+    {
+      "question": "small-caps",
+      "answer": "تحويل الحروف الصغيرة لكبيرة بحجم صغير."
+    },
+    {
+      "question": "text-decoration",
+      "answer": "إضافة أو إزالة خطوط زخرفية للنص."
+    },
+    {
+      "question": "underline",
+      "answer": "إضافة خط تحت النص."
+    },
+    {
+      "question": "line-through",
+      "answer": "إضافة خط شطب بمنتصف النص."
+    },
+    {
+      "question": "text-transform",
+      "answer": "تغيير حالة الأحرف برمجياً."
+    },
+    {
+      "question": "uppercase",
+      "answer": "تحويل الأحرف إلى كبيرة."
+    },
+    {
+      "question": "lowercase",
+      "answer": "تحويل الأحرف إلى صغيرة."
+    },
+    {
+      "question": "capitalize",
+      "answer": "تكبير أول حرف من كل كلمة."
+    },
+    {
+      "question": "text-shadow",
+      "answer": "إضافة ظل للنص."
+    },
+    {
+      "question": "font shorthand",
+      "answer": "اختصار خصائص الخط بسطر واحد."
+    },
+    {
+      "question": "line-height",
+      "answer": "تحديد المسافة العمودية بين الأسطر."
+    },
+    {
+      "question": "opacity",
+      "answer": "تحديد درجة شفافية العنصر بالكامل."
+    },
+    {
+      "question": "em",
+      "answer": "وحدة نسبية تعتمد على حجم خط العنصر الأب."
+    },
+    {
+      "question": "rem",
+      "answer": "وحدة نسبية تعتمد على حجم خط العنصر الجذري html."
+    },
+    {
+      "question": "vw",
+      "answer": "وحدة تمثل 1% من عرض نافذة المتصفح."
+    },
+    {
+      "question": "vh",
+      "answer": "وحدة تمثل 1% من ارتفاع نافذة المتصفح."
+    },
+    {
+      "question": "position: static",
+      "answer": "التموضع الافتراضي للعناصر دون استجابة للإزاحات."
+    },
+    {
+      "question": "position: relative",
+      "answer": "إزاحة العنصر نسبةً لمكانه الأصلي مع بقاء فراغه."
+    },
+    {
+      "question": "position: absolute",
+      "answer": "إزالة العنصر من تدفق الصفحة وتموضعه نسبةً لأقرب أب متموضع."
+    },
+    {
+      "question": "position: fixed",
+      "answer": "تثبيت العنصر بالنسبة لنافذة المتصفح أثناء التمرير."
+    },
+    {
+      "question": "display: flex",
+      "answer": "تحويل العنصر إلى حاوية Flexbox مرنة."
+    },
+    {
+      "question": "flex-direction",
+      "answer": "تحديد اتجاه المحور الرئيسي لعناصر الفليكس."
+    },
+    {
+      "question": "row",
+      "answer": "ترتيب العناصر أفقياً وهو الاتجاه الافتراضي."
+    },
+    {
+      "question": "column",
+      "answer": "ترتيب العناصر عمودياً."
+    },
+    {
+      "question": "row-reverse",
+      "answer": "ترتيب العناصر أفقياً بعكس الاتجاه."
+    },
+    {
+      "question": "column-reverse",
+      "answer": "ترتيب العناصر عمودياً بعكس الاتجاه."
+    },
+    {
+      "question": "justify-content",
+      "answer": "توزيع العناصر على المحور الرئيسي."
+    },
+    {
+      "question": "align-items",
+      "answer": "محاذاة العناصر على المحور العرضي."
+    },
+    {
+      "question": "flex-start",
+      "answer": "محاذاة العناصر عند بداية المحور."
+    },
+    {
+      "question": "flex-end",
+      "answer": "محاذاة العناصر عند نهاية المحور."
+    },
+    {
+      "question": "center",
+      "answer": "توسيط العناصر داخل الحاوية."
+    },
+    {
+      "question": "space-between",
+      "answer": "توزيع العناصر مع مسافات بينية فقط."
+    },
+    {
+      "question": "space-evenly",
+      "answer": "توزيع المسافات بالتساوي قبل وبعد وبين العناصر."
+    },
+    {
+      "question": "stretch",
+      "answer": "تمديد العناصر لملء ارتفاع الحاوية."
+    },
+    {
+      "question": "order",
+      "answer": "تغيير الترتيب البصري للعناصر داخل Flexbox."
+    },
+    {
+      "question": "Document Flow",
+      "answer": "الترتيب الطبيعي للعناصر داخل الصفحة."
+    },
+    {
+      "question": "Viewport",
+      "answer": "المساحة المرئية الحالية من نافذة المتصفح."
+    },
+    {
+      "question": "Fallback Fonts",
+      "answer": "خطوط احتياطية تُستخدم إذا لم يتوفر الخط الأساسي."
+    },
+    {
+      "question": "Case Sensitivity",
+      "answer": "يفرق بين الأحرف الكبيرة والصغيرة في الأسماء."
+    },
+    {
+      "question": "Naming Conventions",
+      "answer": "تنظم طريقة تسمية الكود ليكون مقروءاً وموحداً."
+    },
+    {
+      "question": "Color Names",
+      "answer": "يحدد اللون باستخدام اسمه المباشر."
+    },
+    {
+      "question": "Hex Code",
+      "answer": "يحدد اللون باستخدام ترميز سداسي عشري يبدأ بـ #."
+    },
+    {
+      "question": "Block Element",
+      "answer": "يبدأ من سطر جديد ويأخذ عرض السطر بالكامل."
+    },
+    {
+      "question": "Inline Element",
+      "answer": "يأخذ مساحة بحجم محتواه فقط."
+    },
+    {
+      "question": "Inline-Block",
+      "answer": "يجمع خصائص inline و block معاً."
+    },
+    {
+      "question": "Comma Selector",
+      "answer": "يفصل بين المحددات لتجميعها في قاعدة واحدة."
+    },
+    {
+      "question": "ul",
+      "answer": "ينشئ قائمة غير مرتبة."
+    },
+    {
+      "question": "ol",
+      "answer": "ينشئ قائمة مرتبة."
+    },
+    {
+      "question": "li",
+      "answer": "يمثل عنصراً داخل القائمة."
+    },
+    {
+      "question": "display",
+      "answer": "يحدد طريقة عرض العنصر على الصفحة."
+    },
+    {
+      "question": "block",
+      "answer": "يجعل العنصر يأخذ سطراً كاملاً."
+    },
+    {
+      "question": "inline",
+      "answer": "يجعل العنصر يبقى ضمن نفس السطر."
+    },
+    {
+      "question": "inline-block",
+      "answer": "يجعل العنصر بجانب العناصر مع دعم العرض والارتفاع."
+    },
+    {
+      "question": "font",
+      "answer": "يختصر خصائص الخط بسطر واحد."
+    },
+    {
+      "question": "border",
+      "answer": "يرسم إطاراً حول العنصر."
+    },
+    {
+      "question": "position",
+      "answer": "يحدد طريقة تموضع العنصر."
+    },
+    {
+      "question": "static",
+      "answer": "يجعل العنصر ضمن التدفق الطبيعي للصفحة."
+    },
+    {
+      "question": "relative",
+      "answer": "يزيح العنصر نسبةً إلى موقعه الأصلي."
+    },
+    {
+      "question": "top",
+      "answer": "يحدد إزاحة العنصر من الأعلى."
+    },
+    {
+      "question": "bottom",
+      "answer": "يحدد إزاحة العنصر من الأسفل."
+    },
+    {
+      "question": "left",
+      "answer": "يحدد إزاحة العنصر من اليسار."
+    },
+    {
+      "question": "right",
+      "answer": "يحدد إزاحة العنصر من اليمين."
+    },
+    {
+      "question": "Parent",
+      "answer": "يمثل العنصر الحاوي للعناصر الداخلية."
+    },
+    {
+      "question": "Root",
+      "answer": "يمثل العنصر الجذري للصفحة."
+    },
+    {
+      "question": "html",
+      "answer": "يمثل العنصر الجذري في صفحة HTML."
+    },
+    {
+      "question": "display: grid",
+      "answer": "يفعل نظام CSS Grid لإنشاء شبكة."
+    },
+    {
+      "question": "grid-template-columns",
+      "answer": "يحدد عدد وعرض أعمدة الشبكة."
+    },
+    {
+      "question": "grid-template-rows",
+      "answer": "يحدد عدد وارتفاع صفوف الشبكة."
+    },
+    {
+      "question": "fr",
+      "answer": "يوزع المساحة المتبقية بنسب مرنة."
+    },
+    {
+      "question": "repeat()",
+      "answer": "يكرر قيم الأعمدة أو الصفوف بشكل مختصر."
+    },
+    {
+      "question": "gap",
+      "answer": "يحدد المسافة بين الصفوف والأعمدة."
+    },
+    {
+      "question": "row-gap",
+      "answer": "يحدد المسافة بين الصفوف."
+    },
+    {
+      "question": "column-gap",
+      "answer": "يحدد المسافة بين الأعمدة."
+    },
+    {
+      "question": "justify-items",
+      "answer": "يحاذي العناصر أفقياً داخل الخلايا."
+    },
+    {
+      "question": "align-content",
+      "answer": "يحرك الشبكة عمودياً داخل الحاوية."
+    },
+    {
+      "question": "grid-column",
+      "answer": "يحدد امتداد العنصر عبر الأعمدة."
+    },
+    {
+      "question": "grid-row",
+      "answer": "يحدد امتداد العنصر عبر الصفوف."
+    },
+    {
+      "question": "span",
+      "answer": "يوسع العنصر بعدد محدد من الأعمدة أو الصفوف."
+    },
+    {
+      "question": "justify-self",
+      "answer": "يحدد المحاذاة الأفقية الفردية للعنصر داخل خليته."
+    },
+    {
+      "question": "align-self",
+      "answer": "يحدد المحاذاة العمودية الفردية للعنصر داخل خليته."
+    },
+    {
+      "question": ">",
+      "answer": "يستهدف الابن المباشر فقط."
+    },
+    {
+      "question": "+",
+      "answer": "يستهدف الشقيق المباشر التالي للعنصر."
+    },
+    {
+      "question": "box-shadow",
+      "answer": "يضيف ظلاً للصناديق والعناصر."
+    },
+    {
+      "question": "inset",
+      "answer": "يجعل الظل داخلياً داخل العنصر."
+    },
+    {
+      "question": ":hover",
+      "answer": "يطبق تنسيقاً عند تمرير مؤشر الماوس فوق العنصر."
+    },
+    {
+      "question": ":active",
+      "answer": "يطبق تنسيقاً أثناء الضغط على العنصر."
+    },
+    {
+      "question": ":link",
+      "answer": "يستهدف الروابط غير المزارة."
+    },
+    {
+      "question": ":visited",
+      "answer": "يستهدف الروابط التي تمت زيارتها."
+    },
+    {
+      "question": ":target",
+      "answer": "يستهدف العنصر المطابق للهاش الموجود في الرابط."
+    },
+    {
+      "question": ":checked",
+      "answer": "يستهدف عناصر الإدخال المحددة مثل checkbox و radio."
+    },
+    {
+      "question": ":focus",
+      "answer": "يستهدف العنصر الذي عليه التركيز حالياً."
+    },
+    {
+      "question": ":disabled",
+      "answer": "يستهدف العناصر المعطلة غير القابلة للتفاعل."
+    },
+    {
+      "question": ":nth-child()",
+      "answer": "يستهدف العناصر حسب ترتيبها بين الأشقاء."
+    },
+    {
+      "question": "::first-line",
+      "answer": "ينسق السطر الأول من النص."
+    },
+    {
+      "question": "::first-letter",
+      "answer": "ينسق الحرف الأول من النص."
+    },
+    {
+      "question": "::before",
+      "answer": "ينشئ محتوى قبل العنصر."
+    },
+    {
+      "question": "::after",
+      "answer": "ينشئ محتوى بعد العنصر."
+    },
+    {
+      "question": "content",
+      "answer": "يحدد المحتوى المستخدم مع ::before و ::after."
+    },
+    {
+      "question": "::selection",
+      "answer": "ينسق النص أثناء تحديده بالماوس."
+    }
+  ]
 }
