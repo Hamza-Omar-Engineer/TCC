@@ -1,0 +1,537 @@
+{
+  "البطاقات التعليمية": [
+    {
+      "question": "&lt;!DOCTYPE html&gt;",
+      "answer": "تحديد أن الصفحة تستخدم HTML5."
+    },
+    {
+      "question": "&lt;html&gt;",
+      "answer": "الحاوية الأساسية التي تضم كل محتوى الصفحة."
+    },
+    {
+      "question": "&lt;head&gt;",
+      "answer": "يحتوي معلومات وإعدادات الصفحة غير الظاهرة للمستخدم."
+    },
+    {
+      "question": "&lt;body&gt;",
+      "answer": "يحتوي كل العناصر الظاهرة داخل الصفحة."
+    },
+    {
+      "question": "&lt;title&gt;",
+      "answer": "تحديد اسم الصفحة في تبويب المتصفح."
+    },
+    {
+      "question": "&lt;meta charset=\"UTF-8\"&gt;",
+      "answer": "دعم اللغة العربية وباقي اللغات بشكل صحيح."
+    },
+    {
+      "question": "&lt;meta name=\"viewport\"&gt;",
+      "answer": "جعل الموقع متجاوباً مع شاشات الجوال."
+    },
+    {
+      "question": "&lt;link&gt;",
+      "answer": "ربط ملفات CSS الخارجية بالصفحة."
+    },
+    {
+      "question": "&lt;script&gt;",
+      "answer": "إضافة أو ربط أكواد JavaScript."
+    },
+    {
+      "question": "&lt;style&gt;",
+      "answer": "كتابة أكواد CSS داخل ملف HTML."
+    },
+    {
+      "question": "dir=\"rtl\"",
+      "answer": "تحديد اتجاه الكتابة من اليمين إلى اليسار."
+    },
+    {
+      "question": "id",
+      "answer": "إعطاء معرف فريد لعنصر معين."
+    },
+     {
+      "question": "class",
+      "answer": "تجميع عدة عناصر تحت نفس التنسيق أو الوظيفة."
+    },
+    {
+      "question": "&lt;meta name=\"author\"&gt;",
+      "answer": "تحديد اسم مؤلف أو مطور الصفحة."
+    },
+    {
+      "question": "&lt;meta name=\"description\"&gt;",
+      "answer": "إضافة وصف الصفحة لمحركات البحث."
+    },
+    {
+      "question": "&lt;h1&gt; إلى &lt;h6&gt;",
+      "answer": "إنشاء العناوين الرئيسية والفرعية."
+    },
+    {
+      "question": "&lt;p&gt;",
+      "answer": "كتابة فقرة نصية داخل الصفحة."
+    },
+    {
+      "question": "&lt;br&gt;",
+      "answer": "الانتقال إلى سطر جديد."
+    },
+    {
+      "question": "&lt;hr&gt;",
+      "answer": "إضافة خط فاصل أفقي بين المحتويات."
+    },
+    {
+      "question": "&lt;time&gt;",
+      "answer": "تمثيل الوقت أو التاريخ بشكل مفهوم للمتصفح."
+    },
+    {
+      "question": "&lt;strong&gt;",
+      "answer": "جعل النص مهماً وبخط عريض."
+    },
+    {
+      "question": "&lt;b&gt;",
+      "answer": "جعل النص عريضاً للتنسيق فقط."
+    },
+    {
+      "question": "&lt;em&gt;",
+      "answer": "إبراز النص مع جعله مائلاً."
+    },
+    {
+      "question": "&lt;i&gt;",
+      "answer": "جعل النص مائلاً للتنسيق فقط."
+    },
+    {
+      "question": "&lt;u&gt;",
+      "answer": "وضع خط تحت النص."
+    },
+    {
+      "question": "&lt;s&gt;",
+      "answer": "شطب النص أو الإشارة إلى أنه ملغى."
+    },
+    {
+      "question": "&lt;mark&gt;",
+      "answer": "تمييز النص بخلفية ملونة."
+    },
+    {
+      "question": "&lt;small&gt;",
+      "answer": "تصغير حجم النص."
+    },
+     {
+      "question": "&lt;sub&gt;",
+      "answer": "إظهار النص أسفل السطر."
+    },
+    {
+      "question": "&lt;sup&gt;",
+      "answer": "إظهار النص أعلى السطر."
+    },
+    {
+      "question": "&lt;abbr&gt;",
+      "answer": "عرض اختصار مع توضيح معناه."
+    },
+    {
+      "question": "&lt;code&gt;",
+      "answer": "عرض الأكواد البرمجية داخل النص."
+    },
+    {
+      "question": "&lt;pre&gt;",
+      "answer": "عرض النص مع الحفاظ على المسافات والأسطر."
+    },
+    {
+      "question": "&lt;div&gt;",
+      "answer": "إنشاء حاوية لتقسيم الصفحة."
+    },
+    {
+      "question": "&lt;span&gt;",
+      "answer": "تنسيق جزء صغير من النص داخل السطر."
+    },
+    {
+      "question": "&lt;blockquote&gt;",
+      "answer": "عرض اقتباس طويل."
+    },
+    {
+      "question": "&lt;q&gt;",
+      "answer": "عرض اقتباس قصير داخل السطر."
+    },
+    {
+      "question": "&lt;cite&gt;",
+      "answer": "تحديد اسم المصدر أو المرجع."
+    },
+    {
+      "question": "&lt;address&gt;",
+      "answer": "عرض معلومات التواصل والعنوان."
+    },
+    {
+      "question": "&nbsp;",
+      "answer": "إضافة مسافة إضافية ثابتة."
+    },
+    {
+      "question": "&lt;",
+      "answer": "عرض إشارة أصغر من."
+    },
+    {
+      "question": "&gt;",
+      "answer": "عرض إشارة أكبر من."
+    },
+    {
+      "question": "&frac12;",
+      "answer": "عرض رمز النصف بشكل جاهز."
+    },
+  {
+    "question": "&lt;a&gt;",
+    "answer": "إنشاء روابط قابلة للضغط للتنقل بين الصفحات والمواقع."
+  },
+  {
+    "question": "href",
+    "answer": "تحديد وجهة الرابط أو الصفحة المطلوبة."
+  },
+  {
+    "question": "target",
+    "answer": "تحديد مكان فتح الرابط (نفس التبويب أو تبويب جديد)."
+  },
+  {
+    "question": "title",
+    "answer": "إظهار تلميح نصي عند المرور فوق الرابط."
+  },
+  {
+    "question": "&lt;img&gt;",
+    "answer": "عرض الصور داخل صفحة الويب."
+  },
+  {
+    "question": "src",
+    "answer": "تحديد مسار أو مصدر الصورة."
+  },
+  {
+    "question": "alt",
+    "answer": "كتابة وصف بديل للصورة عند عدم ظهورها أو لقارئات الشاشة."
+  },
+  {
+    "question": "&lt;figure&gt;",
+    "answer": "تجميع صورة أو محتوى مستقل مع وصفه داخل حاوية واحدة."
+  },
+  {
+    "question": "&lt;figcaption&gt;",
+    "answer": "كتابة عنوان أو وصف للصورة أو الشكل."
+  },
+  {
+    "question": "&lt;audio&gt;",
+    "answer": "تشغيل الملفات الصوتية داخل الموقع."
+  },
+  {
+    "question": "controls",
+    "answer": "إظهار أزرار التحكم بالميديا (تشغيل، إيقاف، صوت...)."
+  },
+  {
+    "question": "autoplay",
+    "answer": "تشغيل الصوت أو الفيديو تلقائياً عند فتح الصفحة."
+  },
+  {
+    "question": "loop",
+    "answer": "إعادة تشغيل الميديا بشكل متكرر ولانهائي."
+  },
+  {
+    "question": "muted",
+    "answer": "تشغيل الميديا بدون صوت بشكل افتراضي."
+  },
+  {
+    "question": "&lt;video&gt;",
+    "answer": "عرض وتشغيل ملفات الفيديو."
+  },
+  {
+    "question": "poster",
+    "answer": "عرض صورة غلاف للفيديو قبل تشغيله."
+  },
+  {
+    "question": "&lt;source&gt;",
+    "answer": "توفير عدة صيغ للميديا لزيادة توافق المتصفحات."
+  },
+  {
+    "question": "&lt;iframe&gt;",
+    "answer": "تضمين صفحة أو محتوى خارجي داخل الموقع."
+  },
+  {
+    "question": "&lt;ul&gt;",
+    "answer": "إنشاء قائمة غير مرتبة بنقاط."
+  },
+  {
+    "question": "&lt;ol&gt;",
+    "answer": "إنشاء قائمة مرتبة بالأرقام أو الحروف."
+  },
+  {
+    "question": "&lt;li&gt;",
+    "answer": "إنشاء عنصر داخل القائمة."
+  },
+  {
+    "question": "&lt;table&gt;",
+    "answer": "إنشاء جدول لتنظيم البيانات."
+  },
+  {
+    "question": "&lt;caption&gt;",
+    "answer": "إضافة عنوان أو وصف للجدول."
+  },
+  {
+    "question": "&lt;thead&gt;",
+    "answer": "تحديد رأس الجدول وعناوين الأعمدة."
+  },
+  {
+    "question": "&lt;tbody&gt;",
+    "answer": "احتواء البيانات الرئيسية داخل الجدول."
+  },
+  {
+    "question": "&lt;tfoot&gt;",
+    "answer": "عرض ملخص أو خاتمة الجدول."
+  },
+  {
+    "question": "&lt;tr&gt;",
+    "answer": "إنشاء صف أفقي داخل الجدول."
+  },
+  {
+    "question": "&lt;th&gt;",
+    "answer": "إنشاء خلية عنوان داخل الجدول."
+  },
+  {
+    "question": "&lt;td&gt;",
+    "answer": "إنشاء خلية بيانات عادية داخل الجدول."
+  },
+  {
+    "question": "colspan",
+    "answer": "دمج عدة أعمدة أفقياً داخل خلية واحدة."
+  },
+  {
+    "question": "rowspan",
+    "answer": "دمج عدة صفوف عمودياً داخل خلية واحدة."
+  },
+  {
+    "question": "scope",
+    "answer": "تحديد ما إذا كان عنوان الجدول يخص صفاً أو عموداً."
+  },
+  {
+    "question": "&lt;form&gt;",
+    "answer": "إنشاء استمارة لإرسال بيانات المستخدم."
+  },
+  {
+    "question": "action",
+    "answer": "تحديد ملف أو صفحة استقبال بيانات الفورم."
+  },
+  {
+    "question": "method=\"GET\"",
+    "answer": "إرسال البيانات عبر رابط الصفحة بشكل ظاهر."
+  },
+  {
+    "question": "method=\"POST\"",
+    "answer": "إرسال البيانات بشكل مخفي وآمن داخل الطلب."
+  },
+   {
+    "question": "&lt;input&gt;",
+    "answer": "إنشاء حقول إدخال للمستخدم."
+  },
+  {
+    "question": "type",
+    "answer": "تحديد نوع حقل الإدخال."
+  },
+  {
+    "question": "name",
+    "answer": "تحديد الاسم البرمجي للحقل."
+  },
+  {
+    "question": "placeholder",
+    "answer": "عرض نص توضيحي داخل الحقل."
+  },
+  {
+    "question": "required",
+    "answer": "جعل الحقل إجبارياً."
+  },
+  {
+    "question": "value",
+    "answer": "تحديد قيمة افتراضية للحقل."
+  },
+  {
+    "question": "&lt;textarea&gt;",
+    "answer": "إنشاء صندوق نصوص طويل."
+  },
+  {
+    "question": "rows",
+    "answer": "تحديد عدد أسطر textarea."
+  },
+  {
+    "question": "cols",
+    "answer": "تحديد عرض textarea."
+  },
+  {
+    "question": "maxlength",
+    "answer": "تحديد الحد الأقصى للحروف."
+  },
+  {
+    "question": "readonly",
+    "answer": "جعل الحقل للقراءة فقط."
+  },
+  {
+    "question": "&lt;button&gt;",
+    "answer": "إنشاء زر تفاعلي."
+  },
+  {
+    "question": "submit",
+    "answer": "إرسال بيانات النموذج."
+  },
+  {
+    "question": "reset",
+    "answer": "إعادة تعيين الحقول."
+  },
+  {
+    "question": "button",
+    "answer": "إنشاء زر مخصص للأوامر البرمجية."
+  },
+  {
+    "question": "&lt;select&gt;",
+    "answer": "إنشاء قائمة منسدلة."
+  },
+  {
+    "question": "multiple",
+    "answer": "السماح بتحديد عدة خيارات."
+  },
+  {
+    "question": "&lt;option&gt;",
+    "answer": "إنشاء خيار داخل القائمة المنسدلة."
+  },
+  {
+    "question": "selected",
+    "answer": "تحديد الخيار الافتراضي."
+  },
+  {
+    "question": "disabled",
+    "answer": "تعطيل العنصر أو الخيار."
+  },
+  {
+    "question": "target",
+    "answer": "تحديد مكان فتح النتيجة بعد الإرسال."
+  },
+  {
+    "question": "&lt;label&gt;",
+    "answer": "ربط النص التوضيحي بحقل الإدخال."
+  },
+  {
+    "question": "for",
+    "answer": "ربط label بعنصر عبر id."
+  },
+  {
+    "question": "&lt;fieldset&gt;",
+    "answer": "تجميع عناصر النموذج داخل إطار."
+  },
+  {
+    "question": "&lt;legend&gt;",
+    "answer": "إضافة عنوان لإطار fieldset."
+  },
+  {
+    "question": "&lt;header&gt;",
+    "answer": "تمثيل رأس الصفحة أو القسم."
+  },
+  {
+    "question": "&lt;nav&gt;",
+    "answer": "إنشاء قسم روابط التنقل."
+  },
+  {
+    "question": "&lt;main&gt;",
+    "answer": "تحديد المحتوى الرئيسي للصفحة."
+  },
+  {
+    "question": "&lt;section&gt;",
+    "answer": "تقسيم الصفحة إلى أقسام موضوعية."
+  },
+  {
+    "question": "&lt;article&gt;",
+    "answer": "إنشاء محتوى مستقل مثل المقالات."
+  },
+  {
+    "question": "id",
+    "answer": "تحديد معرف فريد للعنصر."
+  },
+  {
+    "question": "class",
+    "answer": "تجميع العناصر تحت تنسيق مشترك."
+  },
+  {
+    "question": "&lt;meta&gt;",
+    "answer": "تحديد معلومات وإعدادات الصفحة."
+  },
+  {
+    "question": "&lt;strong&gt;",
+    "answer": "إظهار النص المهم بخط عريض."
+  },
+  {
+    "question": "&lt;em&gt;",
+    "answer": "إظهار النص بنبرة توكيد."
+  },
+  {
+    "question": "&lt;!DOCTYPE html&gt;",
+    "answer": "تحديد أن الصفحة تستخدم HTML5."
+  },
+  {
+    "question": "&lt;html&gt;",
+    "answer": "الجذر الأساسي لصفحة الويب."
+  },
+  {
+    "question": "&lt;head&gt;",
+    "answer": "احتواء إعدادات الصفحة والمعلومات المخفية."
+  },
+  {
+    "question": "&lt;body&gt;",
+    "answer": "احتواء المحتوى الظاهر للمستخدم."
+  },
+  {
+    "question": "&lt;title&gt;",
+    "answer": "تحديد عنوان الصفحة في المتصفح."
+  },
+  {
+    "question": "&lt;h1&gt; إلى &lt;h6&gt;",
+    "answer": "إنشاء عناوين متدرجة الأهمية."
+  },
+  {
+    "question": "&lt;p&gt;",
+    "answer": "إنشاء فقرة نصية."
+  },
+  {
+    "question": "&lt;br&gt;",
+    "answer": "الانتقال إلى سطر جديد."
+  },
+  {
+    "question": "&lt;hr&gt;",
+    "answer": "إضافة خط أفقي فاصل."
+  },
+  {
+    "question": "&lt;mark&gt;",
+    "answer": "تمييز النص بخلفية ملونة."
+  },
+  {
+    "question": "&lt;s&gt;",
+    "answer": "إظهار النص المشطوب."
+  },
+  {
+    "question": "&lt;sub&gt;",
+    "answer": "إظهار النص أسفل السطر."
+  },
+  {
+    "question": "&lt;sup&gt;",
+    "answer": "إظهار النص أعلى السطر."
+  },
+  {
+    "question": "&lt;div&gt;",
+    "answer": "إنشاء حاوية تنظيمية عامة."
+  },
+  {
+    "question": "&lt;span&gt;",
+    "answer": "تنسيق جزء صغير داخل السطر."
+  },
+  {
+    "question": "&nbsp;",
+    "answer": "إضافة مسافة ثابتة."
+  },
+  {
+    "question": "&lt;",
+    "answer": "عرض رمز أصغر من."
+  },
+  {
+    "question": "&lt;aside&gt;",
+    "answer": "إنشاء محتوى جانبي مكمل."
+  },
+  {
+    "question": "&lt;footer&gt;",
+    "answer": "إنشاء تذييل الصفحة."
+  }
+
+  ]
+}
